@@ -3,12 +3,6 @@ html {
     scroll-behavior: smooth;
    }
 
-.hi {
-    font-family: "Syne Mono", monospace;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 60px;
-}
 
 
 
@@ -118,21 +112,49 @@ a {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    padding-top:130px;
+    padding-top:140px;
+    position: relative;
+
 }
 
+.hi {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 95px;
+    font-weight: 500;
+    font-style: normal;
+    color: #2a45de;
+}
 
-.profile-pic {
+.hi2 {
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    z-index: 1;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    color: #2a45de;
+
+}
+
+/*
+#profile-pic {
 
     margin-right: 50px;
 
-}
+} */
 
 .home-img {
-    border: 6px solid #2a45de;
+    /* border: 6px solid #2a45de;
     border-radius: 15px;
     overflow: hidden;
-    display: block;
+    display: block; */
 
 }
 
