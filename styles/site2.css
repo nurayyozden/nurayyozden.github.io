@@ -115,7 +115,7 @@ a {
     margin-bottom: 200px;
 }
 
-h1 {
+h1, .pe-header {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 95px;
     font-weight: 600;
@@ -193,6 +193,37 @@ h1 {
     text-align: right;
     margin-right: 20px;
 }
+
+.brushstroke {
+    width: 40%;
+    height: auto;
+    position: relative;
+}
+
+.brushstroke img {
+    width: 100%; /* Ensure SVG fills the container */
+    height: auto; /* Ensure the aspect ratio is maintained */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place SVG behind other content */
+}
+
+#brush2 {
+    left: 130%;
+}
+
+
+/* #proj-header:hover + .brushstroke img{
+    opacity: 1;
+
+} */
+
+/* .pe-h1:hover + .brushstroke img {
+    opacity: 1; /* Show the SVG when hovering over the heading */
+
+
+
 
 
 
