@@ -162,7 +162,7 @@ h1, .pe-header {
     background-color: #d0f97d;
     padding: 30px;
     width: 60%;
-    margin-right: 7%;
+    margin-right: 5%;
     border-radius: 50%;
     text-align: center;
     overflow: hidden;
@@ -204,28 +204,26 @@ h1, .pe-header {
     width: 100%; /* Ensure SVG fills the container */
     height: auto; /* Ensure the aspect ratio is maintained */
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Place SVG behind other content */
+    /* z-index: 1; Place SVG behind other content */
+    /* opacity: 0; */
+}
+
+#brush1 {
+    left: -6%;
 }
 
 #brush2 {
-    left: 130%;
+    left: 150%;
 }
-
 
 /* #proj-header:hover + .brushstroke img{
     opacity: 1;
 
-} */
+}
 
-/* .pe-h1:hover + .brushstroke img {
-    opacity: 1; /* Show the SVG when hovering over the heading */
-
-
-
-
-
+ .pe-h1:hover + .brushstroke img {
+    opacity: 1;
+  } */
 
 /* projects page */
 
@@ -311,9 +309,9 @@ h1, .pe-header {
     margin-bottom: 100px;
  }
 
-.home-title-header {
+/* .home-title-header {
     font-style: italic;
-}
+} */
 
 .timeline-wrapper {
     position: relative;
