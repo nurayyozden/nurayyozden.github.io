@@ -115,17 +115,22 @@ a {
     margin-bottom: 200px;
 }
 
-.hi {
-    position: absolute;
-    top: 15%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
+h1 {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 95px;
     font-weight: 600;
     font-style: normal;
     color: #2a45de;
+
+}
+
+#hi {
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
 }
 
 .hi2 {
@@ -157,7 +162,7 @@ a {
     background-color: #d0f97d;
     padding: 30px;
     width: 60%;
-    margin-right: 9%;
+    margin-right: 7%;
     border-radius: 50%;
     text-align: center;
     overflow: hidden;
@@ -174,47 +179,22 @@ a {
     vertical-align: middle;
 }
 
-
 .material-symbols-outlined {
     font-size: 36px;
 }
 
-/* projects and experiences section */
+/* projects and experiences header */
 
-.pe-section {
-    padding-top: 150px;
+#proj-header {
+    margin-left: 20px;
 }
 
-.projects-and-experiences {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-
+#exp-header {
+    text-align: right;
+    margin-right: 20px;
 }
 
-.image-link {
-    position: relative;
-    margin: 0 2%;
-}
 
-.overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #2a45de;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-
-.image-link:hover .overlay {
-    opacity: 1;
-}
 
 /* projects page */
 
