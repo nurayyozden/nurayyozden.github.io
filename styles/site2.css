@@ -100,8 +100,6 @@ a {
 
 
 
-
-
 /* home page formatting */
 
 
@@ -110,7 +108,7 @@ a {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    padding-top:140px;
+    padding-top:160px;
     position: relative;
     margin-bottom: 200px;
 }
@@ -126,9 +124,8 @@ h1, .pe-header {
 
 #hi {
     position: absolute;
-    top: 15%;
+    top: 10%;
     left: 40%;
-    transform: translate(-50%, -50%);
     z-index: 1;
 
 }
@@ -201,11 +198,10 @@ h1, .pe-header {
 }
 
 .brushstroke img {
-    width: 100%; /* Ensure SVG fills the container */
-    height: auto; /* Ensure the aspect ratio is maintained */
+    width: 100%;
+    height: auto;
     position: absolute;
-    /* z-index: 1; Place SVG behind other content */
-    /* opacity: 0; */
+    z-index: -1;
 }
 
 #brush1 {
@@ -216,14 +212,15 @@ h1, .pe-header {
     left: 150%;
 }
 
-/* #proj-header:hover + .brushstroke img{
-    opacity: 1;
 
-}
+ .pe-header:hover {
+    color: #d0f97d;
+ }
 
- .pe-h1:hover + .brushstroke img {
-    opacity: 1;
-  } */
+ .pe-section {
+    margin-bottom:200px;
+ }
+
 
 /* projects page */
 
@@ -278,26 +275,47 @@ h1, .pe-header {
 }
 
 /* Skills section home page */
+
+
 .skills-section {
-    padding-top: 100px;
-}
-
-.skills-bubbles {
-    display: flex;
-    /* flex-wrap: horizontal; */
-    gap: 2%;
-    justify-content: center;
+    /* margin-top: 100px; */
     text-align: center;
+    padding-bottom: 100px;
 }
 
-.skills-bubbles p {
-    background-color: #2a45de;
-    color: #ffffff;
-    padding: 10px 15px;
-    border-radius: 20px;
-    margin: 5px;
-    font-size: 18px;
+.skills-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
+
+.skills-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+}
+
+
+.skills-icon {
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.skills-icon span {
+    font-size: 80px; /* Adjust the font size to make the icons larger */
+}
+
+.skills-group {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
 
 
 /* Timeline css */
