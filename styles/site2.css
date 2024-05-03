@@ -1,8 +1,12 @@
 html {
     /* background-color: #c4def6; */
     scroll-behavior: smooth;
+    background-color: #afd0ff;
    }
-
+/* 
+   .other-htmls {
+    background-color: #afd0ff;
+   } */
 
 
 body {
@@ -327,9 +331,6 @@ h1, .pe-header {
     margin-bottom: 100px;
  }
 
-/* .home-title-header {
-    font-style: italic;
-} */
 
 .timeline-wrapper {
     position: relative;
