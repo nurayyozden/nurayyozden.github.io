@@ -94,48 +94,7 @@ a {
     color: black;
   }
 
-/* for when used on larger screen */
 
-@media (min-width: 800px) { /* large screen */
-    #navbar-wide{
-        display: flex;
-    }
-
-    #nav-icon {
-        display:none;
-    }
-
-    h1, .pe-header{
-        font-size: 90px;
-    }
-
-    .computer-svg {
-        display: block;
-    }
-
-}
-
-@media (max-width: 800px) {
-    #navbar-wide {
-        display:none;
-    }
-
-    #nav-icon {
-        display: block; /* Ensures the icon is displayed as a block element */
-        cursor: pointer; 
-        color:#2a45de;
-        font-size: 50px;
-        padding-right: 3%;
-    }
-    .pronounce {
-        display:none;
-    }
-
-    h1, .pe-header {
-        font-size: 60px;
-    }
-
-}
 
 
 /* download button */
@@ -164,8 +123,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 160px;
-    padding-top:40%;
+    padding: 20px;
+    padding-top:160px;
     position: relative;
     margin-bottom: 200px;
 }
@@ -591,3 +550,51 @@ footer h4 {
     margin-top: 20px;
 } 
 
+/* For changing screen sizes */
+
+
+
+@media (min-width: 800px) { /* large screen */
+    #navbar-wide{
+        display: flex;
+    }
+
+    #nav-icon {
+        display:none;
+    }
+
+    h1, .pe-header{
+        font-size: 90px;
+    }
+
+    .computer-svg {
+        display: block;
+    }
+
+}
+
+@media (max-width: 800px) { /* small screen */
+    #navbar-wide {
+        display:none;
+    }
+
+    #nav-icon {
+        display: block; /* Ensures the icon is displayed as a block element */
+        cursor: pointer; 
+        color:#2a45de;
+        font-size: 50px;
+        padding-right: 3%;
+    }
+    .pronounce {
+        display:none;
+    }
+
+    h1, .pe-header {
+        font-size: 60px;
+    }
+
+    .intro-text {
+        width: auto;
+        margin-right: 0;
+    }
+}
