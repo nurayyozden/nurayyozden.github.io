@@ -218,7 +218,7 @@ h1, .pe-header {
 }
 
 
- .pe-header:hover {
+ .pe-header:hover, .pe-box .pe-title:hover {
     color: #d0f97d;
  }
 
@@ -264,7 +264,7 @@ h1, .pe-header {
     opacity: 1;
 }
 
-.cover-image {
+/* .cover-image {
     position: absolute;
     top: 0;
     left: 0;
@@ -274,11 +274,10 @@ h1, .pe-header {
     opacity: 0;
     transition: opacity 0.3s ease;
     border-radius: 10px;
-}
+} */
 
-.pe-box:hover .cover-image {
+/* .pe-box:hover .cover-image {
     opacity: 0.4; /* Show image on hover */
-}
 
 
 /* Skills section home page */
