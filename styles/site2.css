@@ -19,7 +19,7 @@ body {
 
 body {
     font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 300;
     font-style: normal;
 }
@@ -165,7 +165,7 @@ h1, .pe-header {
     padding: 30px;
     width: 60%;
     margin-right: 5%;
-    border-radius: 50%;
+    border-radius: 100px;
     text-align: center;
     overflow: hidden;
 
@@ -273,11 +273,13 @@ h1, .pe-header {
     object-fit: cover;
     opacity: 0;
     transition: opacity 0.3s ease;
+    border-radius: 10px;
 }
 
 .pe-box:hover .cover-image {
     opacity: 0.4; /* Show image on hover */
 }
+
 
 /* Skills section home page */
 
@@ -318,7 +320,10 @@ h1, .pe-header {
 .skills-group {
     margin-left: 30px;
     margin-right: 30px;
+    width: 30%;
 }
+
+
 
 
 
@@ -431,6 +436,7 @@ h1, .pe-header {
 
 .pe-left img {
     max-width: 100%;
+    border-radius: 10px;
 }
 
 .pe-right {
@@ -447,6 +453,14 @@ h1, .pe-header {
     font-style: italic;
 }
 
+.lightning {
+    text-align: center;
+  }
+
+.material-symbols-outlined {
+    color: #d0f97d; 
+    fill: #d0f97d;
+  }
 
 
 /* footer */
