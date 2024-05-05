@@ -596,5 +596,24 @@ footer h4 {
     .intro-text {
         width: auto;
         margin-right: 0;
+
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-row {
+        flex-direction: column; 
+        align-items: center; 
+        margin-bottom: 20px;
+    }
+
+    .skills-group {
+        width: 80%; 
+        margin-bottom: 20px; 
+    }
+
+    .skills-icon {
+        margin-left: auto; 
+        margin-right: auto; 
     }
 }
