@@ -109,6 +109,10 @@ a {
         font-size: 90px;
     }
 
+    .computer-svg {
+        display: block;
+    }
+
 }
 
 @media (max-width: 800px) {
@@ -226,7 +230,7 @@ h1, .pe-header {
 }
 
 .computer-svg {
-    display: block;
+    display: none;
     margin: auto;
 }
 
