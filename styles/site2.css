@@ -28,7 +28,7 @@ body {
     justify-content: space-between;
     position: fixed;
     top: 0;
-    padding: 15px;
+    padding: 2%;
     width: 100%;
     box-sizing: border-box; 
     z-index: 1000; 
@@ -41,20 +41,38 @@ body {
     margin-bottom: 500px;
 }
 
+#navbar-narrow {
+    display: none;
+}
 
-/* .nav-buttons {
-    padding-right: 20px;
-} */
+#navbar a {
+    font-size: 13px;
+}
 
+#navbar-narrow.active {
+    display: block;
+    position: absolute; /* Position the navbar absolutely */
+    top: calc(100% + 3px); /* Position it right below the menu icon */
+    right: 8%;
+    /* width: 100%; */
+    background-color: #afd0ff; /* Optional: Add background color for better visibility */
+    padding: 10px; /* Optional: Add padding for better spacing */
+}
 
-.nav-buttons a {
+.nav-bar ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin: 3px; /* Remove default margin */
+}
+
+#navbar-wide a {
     margin-right: 40px;
     text-decoration: none;
     color: #333;
     font-size: large;
 }
 
-.nav-buttons a:hover {
+.nav-bar a:hover {
     color: #2a45de;
 }
 
@@ -62,7 +80,9 @@ body {
     margin: 10px;
 }
 
-
+.social-icons {
+    text-align: center; 
+}
 
 .social-icons img {
     width: 30px;
@@ -73,6 +93,46 @@ a {
     text-decoration: none !important;
     color: black;
   }
+
+/* for when used on larger screen */
+
+@media (min-width: 800px) { /* large screen */
+    #navbar-wide{
+        display: flex;
+    }
+
+    #nav-icon {
+        display:none;
+    }
+
+    h1, .pe-header{
+        font-size: 90px;
+    }
+
+}
+
+@media (max-width: 800px) {
+    #navbar-wide {
+        display:none;
+    }
+
+    #nav-icon {
+        display: block; /* Ensures the icon is displayed as a block element */
+        cursor: pointer; 
+        color:#2a45de;
+        font-size: 50px;
+        padding-right: 3%;
+    }
+    .pronounce {
+        display:none;
+    }
+
+    h1, .pe-header {
+        font-size: 60px;
+    }
+
+}
+
 
 /* download button */
 
@@ -100,18 +160,18 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    padding-top:160px;
+    padding: 160px;
+    padding-top:40%;
     position: relative;
     margin-bottom: 200px;
 }
 
 h1, .pe-header {
     font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 95px;
     font-weight: 600;
     font-style: normal;
     color: #2a45de;
+    transition: font-size 0.5s ease; 
 
 }
 
@@ -126,7 +186,7 @@ h1, .pe-header {
 .pronounce {
     position: absolute;
     top: 43%;
-    left: 80%;
+    left: 72%;
 }
 
 .hi2 {
@@ -307,12 +367,12 @@ h1, .pe-header {
 }
 
 .skills-icon span {
-    font-size: 80px; /* Adjust the font size to make the icons larger */
+    font-size: 80px; 
 }
 
 .skills-group {
-    margin-left: 30px;
-    margin-right: 30px;
+    padding-left: 4%;
+    padding-right: 4%;
     width: 30%;
 }
 
