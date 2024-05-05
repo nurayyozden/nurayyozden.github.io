@@ -59,19 +59,21 @@
     </span>
 
     <!-- for narrow screen -->
-    <nav class="nav-bar" id="navbar-narrow">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#projects-anchor">Projects & Experiences</a></li>
-            <li><a href="#skills-anchor">Skills</a></li>
-            <li><a target="_blank" href="uploads/nuray_y_ozden_resume.pdf" download="nuray_y_ozden_resume.pdf" >Download My Resume</a></li>
-        </ul>
-    </nav>
+    <div class="side-panel" id="side-panel">
+        <nav class="nav-bar" id="navbar-narrow">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#projects-anchor">Projects & Experiences</a></li>
+                <li><a href="#skills-anchor">Skills</a></li>
+                <li><a target="_blank" href="uploads/nuray_y_ozden_resume.pdf" download="nuray_y_ozden_resume.pdf" >Download My Resume</a></li>
+            </ul>
+        </nav>
+    </div>
 
 
     </header>
 
-    <body class="body-home">
+    <body class="body-home" id="body-home">
 
 
         <div class="home-content">
@@ -194,9 +196,13 @@
         </script>
 
         <script>
-        document.getElementById('nav-icon').addEventListener('click', function() {
-            console.log("clicked");
-            document.getElementById('navbar-narrow').classList.toggle('active');});
+
+            document.getElementById('nav-icon').addEventListener('click', function() {
+                document.getElementById('side-panel').classList.toggle('active');
+                var bodymargin = document.getElementById("body-home");
+                bodymargin.classList.add("add-marg");
+            });
+
         </script>
 
 </body>

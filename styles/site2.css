@@ -49,15 +49,15 @@ body {
     font-size: 13px;
 }
 
-#navbar-narrow.active {
+/* #navbar-narrow.active {
     display: block;
     position: absolute; /* Position the navbar absolutely */
-    top: calc(100% + 3px); /* Position it right below the menu icon */
-    right: 8%;
+    /* top: calc(100% + 3px); /* Position it right below the menu icon */
+    /* right: 8%;
     /* width: 100%; */
-    background-color: #afd0ff; /* Optional: Add background color for better visibility */
-    padding: 10px; /* Optional: Add padding for better spacing */
-}
+    /* background-color: #afd0ff; /* Optional: Add background color for better visibility */
+    /* padding: 10px; /* Optional: Add padding for better spacing */
+/* } */
 
 .nav-bar ul {
     list-style-type: none; /* Remove default list style */
@@ -94,6 +94,47 @@ a {
     color: black;
   }
 
+/* Hide the side panel by default */
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Initially off-screen */
+    width: 300px;
+    height: 100%;
+    background-color:#2a45de;
+    z-index: 999;
+    transition: right 0.3s ease; /* Add transition for smooth animation */
+}
+
+/* Show the side panel when the 'active' class is applied */
+.side-panel.active {
+    right: 0; /* Slide in from the right */
+}
+
+#navbar-narrow ul li {
+    color: white;
+}
+
+/* Style for the menu icon */
+.nav-icon {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Position menu icon on the right */
+}
+
+/* Style for the main content */
+.body-home {
+    margin-right: 0; /* Ensure content is not covered by the side panel */
+    transition: margin-right 0.3s ease; /* Add transition for smooth animation */
+}
+
+
+
+.add-marg {
+    margin-right: 300px;
+}
 
 
 
