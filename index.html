@@ -27,6 +27,8 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 <!-- Menu 3 lines -->
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<!-- arrow -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <header class="sticky-header">
@@ -61,6 +63,9 @@
     <!-- for narrow screen -->
     <div class="side-panel" id="side-panel">
         <nav class="nav-bar" id="navbar-narrow">
+            <span id="nav-arrow" class="material-symbols-outlined">
+                arrow_right_alt
+                </span>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#projects-anchor">Projects & Experiences</a></li>
@@ -201,6 +206,39 @@
                 document.getElementById('side-panel').classList.toggle('active');
                 var bodymargin = document.getElementById("body-home");
                 bodymargin.classList.add("add-marg");
+
+                var icon = document.getElementById("nav-icon");
+                icon.style.zIndex = '3';
+
+                var navbar = document.getElementById("navbar-narrow");
+                navbar.style.display = 'block';
+
+                // var originalColor = 'rgb(42, 69, 222)';
+                // var newColor = 'rgb(175, 208, 255)';
+
+                // var currentColor = icon.style.color;
+                // // console.log(currentColor);
+
+                // // Toggle between originalColor and newColor
+                // if (currentColor === originalColor) {
+                //     console.log(currentColor)
+                //     icon.style.color = newColor; // Change to new color
+                //     console.log(icon.style.color)
+                // } else {
+                //     icon.style.color = originalColor; // Change back to original color
+                // }
+
+            });
+
+            document.getElementById('nav-arrow').addEventListener('click', function() {
+                var sidePanel = document.getElementById('side-panel');
+
+                // Toggle the side panel's position to slide it out of sight
+                if (sidePanel.style.right === '0px') {
+                    sidePanel.style.right = '-200px'; // Slide out of sight
+                } else {
+                    sidePanel.style.right = '0px'; // Slide back into view
+                }
             });
 
         </script>

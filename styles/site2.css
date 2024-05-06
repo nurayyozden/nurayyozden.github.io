@@ -43,21 +43,26 @@ body {
 
 #navbar-narrow {
     display: none;
+    right: 8%;
+    padding: 10px;
+    top: 30
 }
 
-#navbar a {
-    font-size: 13px;
+#nav-arrow {
+    color:#afd0ff;
+    cursor: pointer;
+
 }
 
-/* #navbar-narrow.active {
-    display: block;
-    position: absolute; /* Position the navbar absolutely */
-    /* top: calc(100% + 3px); /* Position it right below the menu icon */
-    /* right: 8%;
-    /* width: 100%; */
-    /* background-color: #afd0ff; /* Optional: Add background color for better visibility */
-    /* padding: 10px; /* Optional: Add padding for better spacing */
-/* } */
+
+#navbar-narrow a {
+    font-size: 16px;
+    color: #afd0ff;
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
+}
+
+
 
 .nav-bar ul {
     list-style-type: none; /* Remove default list style */
@@ -72,7 +77,7 @@ body {
     font-size: large;
 }
 
-.nav-bar a:hover {
+#navbar-wide a:hover {
     color: #2a45de;
 }
 
@@ -94,15 +99,19 @@ a {
     color: black;
   }
 
+.z-ind {
+    z-index: 3;
+}
+
 /* Hide the side panel by default */
 .side-panel {
     position: fixed;
     top: 0;
-    right: -300px; /* Initially off-screen */
-    width: 300px;
+    right: -200px; /* Initially off-screen */
+    width: 200px;
     height: 100%;
     background-color:#2a45de;
-    z-index: 999;
+    z-index: 2;
     transition: right 0.3s ease; /* Add transition for smooth animation */
 }
 
@@ -133,7 +142,7 @@ a {
 
 
 .add-marg {
-    margin-right: 300px;
+    margin-right: 200px;
 }
 
 
@@ -226,6 +235,7 @@ h1, .pe-header {
     border-radius: 100px;
     text-align: center;
     overflow: hidden;
+    margin-top: 20px;
 
 }
 
@@ -637,6 +647,7 @@ footer h4 {
     .intro-text {
         width: auto;
         margin-right: 0;
+        margin-top: 20px;
 
     }
 }
