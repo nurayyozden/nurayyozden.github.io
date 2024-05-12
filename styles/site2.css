@@ -79,7 +79,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color:#2a45de;
-    padding: 20px;
+    padding:25px;
     border-radius: 10px;
 }
 
@@ -699,13 +699,13 @@ footer h4 {
 }
 
 @media (max-width: 600px) {
-    .skills-row {
+    .skills-row, .pe-container {
         flex-direction: column; 
         align-items: center; 
         margin-bottom: 20px;
     }
 
-    .skills-group {
+    .skills-group, .pe-box {
         width: 80%; 
         margin-bottom: 20px; 
     }
@@ -718,4 +718,6 @@ footer h4 {
     .brushstroke {
         display: none;
     }
+
+    
 }
