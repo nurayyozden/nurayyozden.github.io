@@ -60,23 +60,21 @@
         menu
     </span>
 
-    <!-- for narrow screen -->
-    <div class="side-panel" id="side-panel">
-        <nav class="nav-bar" id="navbar-narrow">
-            <span id="nav-arrow" class="material-symbols-outlined">
-                arrow_right_alt
-                </span>
+    </header>
+
+        <!-- nav bar window for narrow screen -->
+
+    <div id="navOverlay">
+        <div id="navContent">
+            <span id="closeNav">&times;</span>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#projects-anchor">Projects & Experiences</a></li>
                 <li><a href="#skills-anchor">Skills</a></li>
                 <li><a target="_blank" href="uploads/nuray_y_ozden_resume.pdf" download="nuray_y_ozden_resume.pdf" >Download My Resume</a></li>
             </ul>
-        </nav>
+        </div>
     </div>
-
-
-    </header>
 
     <body class="body-home" id="body-home">
 
@@ -100,10 +98,11 @@
             <img class="computer-svg" src="uploads/computer.svg" alt="Computer GIF">
 
         </div>
-
-
-
+        
     <div id="projects-anchor"></div>
+
+
+
 
     <!-- New section: no images -->
     <div class="pe-section" >
@@ -202,44 +201,22 @@
 
         <script>
 
-            document.getElementById('nav-icon').addEventListener('click', function() {
-                document.getElementById('side-panel').classList.toggle('active');
-                var bodymargin = document.getElementById("body-home");
-                bodymargin.classList.add("add-marg");
 
-                var icon = document.getElementById("nav-icon");
-                icon.style.zIndex = '3';
-
-                var navbar = document.getElementById("navbar-narrow");
-                navbar.style.display = 'block';
-
-                // var originalColor = 'rgb(42, 69, 222)';
-                // var newColor = 'rgb(175, 208, 255)';
-
-                // var currentColor = icon.style.color;
-                // // console.log(currentColor);
-
-                // // Toggle between originalColor and newColor
-                // if (currentColor === originalColor) {
-                //     console.log(currentColor)
-                //     icon.style.color = newColor; // Change to new color
-                //     console.log(icon.style.color)
-                // } else {
-                //     icon.style.color = originalColor; // Change back to original color
-                // }
-
+            document.getElementById("nav-icon").addEventListener("click", function() {
+                document.getElementById("navOverlay").style.display = "block";
             });
 
-            document.getElementById('nav-arrow').addEventListener('click', function() {
-                var sidePanel = document.getElementById('side-panel');
-
-                // Toggle the side panel's position to slide it out of sight
-                if (sidePanel.style.right === '0px') {
-                    sidePanel.style.right = '-200px'; // Slide out of sight
-                } else {
-                    sidePanel.style.right = '0px'; // Slide back into view
-                }
+            document.getElementById("closeNav").addEventListener("click", function() {
+                document.getElementById("navOverlay").style.display = "none";
             });
+
+            // Close nav overlay when a navigation option is selected
+            document.querySelectorAll("#navContent ul li a").forEach(function(item) {
+                item.addEventListener("click", function() {
+                    document.getElementById("navOverlay").style.display = "none";
+                });
+            });
+
 
         </script>
 
