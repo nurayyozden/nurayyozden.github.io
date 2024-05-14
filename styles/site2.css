@@ -38,29 +38,9 @@ body {
 
 .body-pe {
     padding: 20px;
-    margin-bottom: 500px;
 }
 
-/* #navbar-narrow {
-    display: none;
-    right: 8%;
-    padding: 10px;
-    top: 30
-} */
 
-/* #nav-arrow {
-    color:#afd0ff;
-    cursor: pointer;
-
-} */
-
-
-/* #navbar-narrow a {
-    font-size: 16px;
-    color: #afd0ff;
-    /* margin-top: 5px;
-    margin-bottom: 5px; */
-/* } */
 
 #navOverlay {
     display: none;
