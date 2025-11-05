@@ -1,0 +1,703 @@
+html {
+    scroll-behavior: smooth;
+    background-color: #bfd7fa;
+   }
+
+body {
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.github-embed {
+    color: #2a45de;
+}
+
+
+/* Nav bar CSS */
+
+
+.sticky-header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    padding: 2%;
+    width: 100%;
+    box-sizing: border-box; 
+    z-index: 1000; 
+    background-color: #afd0ff;
+
+}
+
+.body-pe {
+    padding: 20px;
+}
+
+
+
+#navOverlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#navContent {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:#2a45de;
+    padding:25px;
+    border-radius: 10px;
+}
+
+#closeNav {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+}
+
+#navContent ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#navContent ul li {
+    margin-bottom: 10px;
+}
+
+#navContent ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+.nav-bar ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+    margin: 3px; /* Remove default margin */
+}
+
+#navbar-wide a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: #333;
+    font-size: large;
+}
+
+#navbar-wide a:hover {
+    color: #2a45de;
+}
+
+.social-icons a {
+    margin: 10px;
+}
+
+.social-icons {
+    text-align: center; 
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+  }
+
+.z-ind {
+    z-index: 3;
+}
+
+/* Hide the side panel by default */
+.side-panel {
+    position: fixed;
+    top: 0;
+    right: -200px; /* Initially off-screen */
+    width: 200px;
+    height: 100%;
+    background-color:#2a45de;
+    z-index: 2;
+    transition: right 0.3s ease; /* Add transition for smooth animation */
+}
+
+/* Show the side panel when the 'active' class is applied */
+.side-panel.active {
+    right: 0; /* Slide in from the right */
+}
+
+#navbar-narrow ul li {
+    color: white;
+}
+
+/* Style for the menu icon */
+.nav-icon {
+    display: block;
+    cursor: pointer;
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Position menu icon on the right */
+}
+
+/* Style for the main content */
+.body-home {
+    margin-right: 0; /* Ensure content is not covered by the side panel */
+    transition: margin-right 0.3s ease; /* Add transition for smooth animation */
+}
+
+
+
+.add-marg {
+    margin-right: 200px;
+}
+
+
+
+/* download button */
+
+.download-link, .back-button {
+    background-color: #2a45de;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    max-width: 70px;
+}
+
+  .download-link:hover, .back-button:hover {
+    background-color: #001aad; /* Darker purple on hover */
+  }
+
+
+
+/* home page formatting */
+
+
+.home-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top:160px;
+    position: relative;
+    margin-bottom: 200px;
+}
+
+h1, .pe-header {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #2a45de;
+    transition: font-size 0.5s ease; 
+
+}
+
+#hi {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    z-index: 1;
+
+}
+
+.pronounce {
+    position: absolute;
+    top: 43%;
+    left: 72%;
+}
+
+.hi2 {
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    z-index: 1;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 40px;
+    font-weight: 500;
+    font-style: normal;
+    color: #2a45de;
+}
+
+
+.content {
+    text-align: center;
+    max-width: 40%;
+}
+
+/* introduction */
+
+.introduction {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro-text {
+    background-color: #d0f97d;
+    padding: 30px;
+    width: 60%;
+    margin-right: 5%;
+    border-radius: 100px;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 20px;
+
+}
+
+.computer-svg {
+    display: none;
+    margin: auto;
+}
+
+.intro-text p {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.material-symbols-outlined {
+    font-size: 36px;
+}
+
+/* projects and experiences header */
+
+#proj-header {
+    margin-left: 20px;
+}
+
+#exp-header {
+    text-align: right;
+    margin-right: 20px;
+}
+
+.brushstroke {
+    width: 40%;
+    height: auto;
+    position: relative;
+}
+
+.brushstroke img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -1;
+}
+
+#brush1 {
+    left: -6%;
+}
+
+#brush2 {
+    left: 150%;
+}
+
+
+ .pe-header:hover, .pe-box .pe-title:hover {
+    color: #d0f97d;
+ }
+
+ .pe-section {
+    margin-bottom:200px;
+ }
+
+
+/* projects page */
+
+.pe-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pe-box {
+    position: relative;
+    margin: 10px;
+    width: calc(25% - 20px);
+    max-width: 300px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.pe-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pe-box:hover .pe-overlay {
+    opacity: 1;
+}
+
+/* .cover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 10px;
+} */
+
+/* .pe-box:hover .cover-image {
+    opacity: 0.4; /* Show image on hover */
+
+
+/* Skills section home page */
+
+
+.skills-section {
+    text-align: center;
+}
+
+.skills-boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+
+.skills-icon {
+    width: 100px;
+    height: 100px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.skills-icon span {
+    font-size: 80px; 
+}
+
+.skills-group {
+    padding-left: 4%;
+    padding-right: 4%;
+    width: 30%;
+}
+
+.p1-video {
+    text-align: center;
+}
+
+iframe {
+    height: "200";
+    width: "auto"; 
+    margin-bottom: 20px;
+}
+
+
+
+
+/* Timeline css */
+
+/* Source: https://blog.bitsrc.io/how-to-create-a-timeline-with-pure-css-862ffea5b99b */
+
+.timeline {
+    padding-top: 100px;
+    margin-bottom: 100px;
+ }
+
+
+.timeline-wrapper {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    height: 300px;
+  }
+
+  .timeline-wrapper .middle-line {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #2a45de;
+  }
+
+  .box {
+    width: 11%;
+    position: relative;
+    min-height: 300px;
+    float: right;
+    margin-left: 3%;
+    /* top: 20px; Add 20px of vertical space */
+
+  }
+
+  .box .date {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #c4def6;
+    border: 2px solid #2a45de;
+  }
+  .date p {
+    text-align: center;
+    margin-top: 3px;
+    margin-bottom: 0px;
+    font-size: 14px;;
+  }
+
+  .box .box-content {
+    border-radius: 5px;
+    background-color: #2a45de;
+    width: 90%;
+    position: absolute;
+    left: -40%;
+    padding: 10px;
+  }
+  .box-content p {
+    margin: 0;
+    color: white;
+  }
+
+  .box-b .box-content {
+    top: 65%;
+  }
+
+  .box-top .box-content {
+    top:-10%
+  }
+
+
+  /* Project and Experiences Spec pages */
+
+  .pe-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.pe-details {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.pe-left {
+    flex: 1;
+    padding-right: 20px;
+    border-right: 4px solid #2a45de;
+
+}
+
+.pe-right {
+    flex: 2;
+}
+
+.pe-left h2,
+.pe-left h4,
+.pe-left p,
+.pe-left img {
+    margin-bottom: 10px;
+}
+
+.pe-left img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.pe-right {
+    margin: 20px;
+}
+
+.pe-right p {
+    margin-bottom: 10px;
+    padding-left: 20px;
+
+}
+
+.pe-time {
+    font-style: italic;
+}
+
+.lightning {
+    text-align: center;
+  }
+
+.material-symbols-outlined {
+    color: #d0f97d; 
+    fill: #d0f97d;
+  }
+
+.text-link {
+    color:#2a45de;
+}
+
+
+/* footer */
+
+/* footer {
+    background-color: #2a45de;
+    color: #fff;
+    padding: 20px 0;
+    position: relative;
+    bottom: -20px;
+    width: 102%;
+    left:-20px;
+    top:-30px;
+    margin-bottom: 30px;
+} */
+
+footer {
+    color: rgb(71, 69, 69);
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top:30px;
+}
+
+footer p{
+    font-size: 13px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+footer h4 {
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-section {
+    width: 50%;
+    text-align: center;
+}
+
+#footer-left {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+} 
+
+/* For changing screen sizes */
+
+
+
+@media (min-width: 800px) { /* large screen */
+    #navbar-wide{
+        display: flex;
+    }
+
+    #nav-icon {
+        display:none;
+    }
+
+    h1, .pe-header{
+        font-size: 90px;
+    }
+
+    .computer-svg {
+        display: block;
+    }
+
+}
+
+@media (max-width: 800px) { /* small screen */
+    #navbar-wide {
+        display:none;
+    }
+
+    #nav-icon {
+        display: block; /* Ensures the icon is displayed as a block element */
+        cursor: pointer; 
+        color:#2a45de;
+        font-size: 50px;
+        padding-right: 3%;
+    }
+    .pronounce {
+        display:none;
+    }
+
+    h1, .pe-header {
+        font-size: 60px;
+    }
+
+    .intro-text {
+        width: auto;
+        margin-right: 0;
+        margin-top: 60px;
+        margin-bottom: 60px;
+
+    }
+}
+
+@media (max-width: 600px) {
+    .skills-row, .pe-container {
+        flex-direction: column; 
+        align-items: center; 
+        margin-bottom: 20px;
+    }
+
+    .skills-group, .pe-box {
+        width: 80%; 
+        margin-bottom: 20px; 
+    }
+
+    .skills-icon {
+        margin-left: auto; 
+        margin-right: auto; 
+    }
+
+    .brushstroke {
+        display: none;
+    }
+
+    
+}
