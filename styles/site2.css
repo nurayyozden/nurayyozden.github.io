@@ -6,6 +6,8 @@ html {
 body {
     justify-content: center;
     align-items: center;
+    margin: 0;
+    padding-top: 80px;
 }
 
 body {
@@ -193,7 +195,7 @@ a {
 
 /* home page formatting */
 
-
+/* OLD
 .home-content {
     display: flex;
     justify-content: center;
@@ -202,7 +204,39 @@ a {
     padding-top:160px;
     position: relative;
     margin-bottom: 200px;
+} */
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 80px);
+  gap: 2rem;
+  padding-left: 8rem;
+  padding-right: 8rem;
 }
+
+.home-text {
+    text-align: center;
+}
+
+.home-img {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+  }
+
+  .home-img {
+    width: 60%;
+  }
+}
+
 
 h1, .pe-header {
     font-family: "Plus Jakarta Sans", sans-serif;
@@ -213,23 +247,27 @@ h1, .pe-header {
 
 }
 
+/* OLD
 #hi {
     position: absolute;
     top: 10%;
     left: 40%;
     z-index: 1;
 
+} */
+#hi {
+  margin: 0;
+  font-size: 5rem;
 }
 
+
 .pronounce {
-    position: absolute;
-    top: 43%;
-    left: 72%;
+  margin-top: 0.25rem;       
+  margin-bottom: 0.5rem;    
 }
 
 .hi2 {
-    position: absolute;
-    top: 85%;
+    /* position: absolute; */
     left: 10%;
     z-index: 1;
     font-family: "Plus Jakarta Sans", sans-serif;
