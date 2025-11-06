@@ -17,10 +17,29 @@ body {
     font-style: normal;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
 .github-embed {
     color: #2a45de;
 }
 
+#vanta-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0; /* behind everything */
+}
+
+body > *:not(#vanta-bg) {
+  position: relative;
+  z-index: 1;
+}
 
 /* Nav bar CSS */
 
@@ -306,17 +325,6 @@ h1, .pe-header {
     font-size: 36px;
 }
 
-/* projects and experiences header */
-
-#proj-header {
-    margin-left: 20px;
-}
-
-#exp-header {
-    text-align: right;
-    margin-right: 20px;
-}
-
 
  .pe-box .pe-title:hover {
     color: #d0f97d;
@@ -327,7 +335,7 @@ h1, .pe-header {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 3rem;              /* space between the two columns */
+    gap: 6rem;              /* space between the two columns */
     padding: 2rem 1rem;
     text-align: center;
     flex-wrap: wrap;
