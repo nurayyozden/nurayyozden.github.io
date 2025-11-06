@@ -311,10 +311,6 @@ h1, .pe-header {
 
 }
 
-/* .computer-svg {
-    display: none;
-    margin: auto;
-} */
 
 .intro-text p {
     font-size: 20px;
@@ -326,7 +322,11 @@ h1, .pe-header {
 }
 
 
- .pe-box .pe-title:hover {
+ .pe-box .pe-title:hover{
+    color: #d0f97d;
+ }
+
+ .text-link:hover {
     color: #d0f97d;
  }
 
@@ -596,20 +596,16 @@ iframe {
     color:#2a45de;
 }
 
+video {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  height: auto;
+}
+
 
 /* footer */
 
-/* footer {
-    background-color: #2a45de;
-    color: #fff;
-    padding: 20px 0;
-    position: relative;
-    bottom: -20px;
-    width: 102%;
-    left:-20px;
-    top:-30px;
-    margin-bottom: 30px;
-} */
 
 footer {
     color: rgb(71, 69, 69);
