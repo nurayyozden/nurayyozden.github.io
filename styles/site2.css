@@ -33,29 +33,32 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0; /* behind everything */
+  z-index: 0;
 }
 
-body > *:not(#vanta-bg) {
+body > *:not(#vanta-bg):not(.sticky-header) {
   position: relative;
   z-index: 1;
 }
 
 /* Nav bar CSS */
 
-
+ 
 .sticky-header {
-    display: flex;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    padding: 2%;
-    width: 100%;
-    box-sizing: border-box; 
-    z-index: 1000; 
-    background-color: #afd0ff;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(175, 208, 255, 0.95); /* or solid #afd0ff if you prefer */
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  z-index: 10; /* above everything */
 }
+
+
 
 .body-pe {
     padding: 20px;
