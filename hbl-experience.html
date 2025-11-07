@@ -13,10 +13,11 @@
 
 
 <body class="body-pe">
+  <div id="vanta-bg"></div>
 
     <!-- Header -->
     <header>
-        <a href="experiences.html" class="back-button">Back</a>
+        <a href="index.html#projects-anchor" class="back-button">Back</a>
     </header>
 
     <div class="pe-wrapper">
@@ -35,7 +36,14 @@
             <div class="pe-description">
                 <p>Throughout my time as the Technology Correspondent on the <a target="_blank" class="text-link" href="https://blogs.cornell.edu/healthbehavlab/">Health Behaviors Lab</a> at Cornell under PI Dr. Laura Bellows, I was introduced to the research arena. Through observing different research projects concerning maternal and child health, I got a front-row seat to the dynamic intersection of technology and public health. Dr. Bellows' guidance and the collaborative spirit of the lab fueled my passion for leveraging technology to address pressing health challenges.</p>
                 <div class="lightning"><span class="material-symbols-outlined">bolt</span></div>
-                <p>I have pioneered a project that implemented <a target="_blank" class="text-link" href="https://boomi.com/">Boomi</a> — an integration software company, usually used for making business processes more efficient—and data collection for research projects on maternal and early childhood educator health.</p>
+                <p>I have pioneered a project that implemented <a target="_blank" class="text-link" href="https://boomi.com/">Boomi</a> — an integration software company, usually used for making business processes more efficient—and data collection for research projects on maternal and early childhood educator health. You can find a video of my presentation of this project below for the Silent Hoist & Crane competition, of which I won 3rd place!</p>
+                <div class="p1-video">
+                  <video controls width="640">
+                    <source src="/uploads/Boomi_project_presentation_recording.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+
                 <div class="lightning"><span class="material-symbols-outlined">bolt</span></div>
                 <p>Additionally, I collaborated with other members of the lab to learn about and implement a qualitative survey through <a target="_blank" class="text-link" href="https://networkcanvas.com/">Network Canvas</a>. Overall, this hands-on experience has equipped me with invaluable skills and insights into how technology can be harnessed to drive meaningful advancements in public health research and practice.</p>
             </div>
@@ -54,7 +62,7 @@
   <script src="scripts/vanta.net.min.js"></script>
   <script>
   VANTA.NET({
-  el: "html",
+    el: "#vanta-bg",
   mouseControls: true,
   touchControls: true,
   gyroControls: false,

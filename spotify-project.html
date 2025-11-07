@@ -13,10 +13,11 @@
 
 
 <body class="body-pe">
+  <div id="vanta-bg"></div>
 
     <!-- Header -->
     <header>
-        <a href="projects.html" class="back-button">Back</a>
+        <a href="index.html#projects-anchor" class="back-button">Back</a>
     </header>
 
     <div class="pe-wrapper">
@@ -26,13 +27,13 @@
     <div class="pe-details">
         <div class="pe-left">
             <h2 class="pe-title">Spotify Music Project</h2>
-            <h4 class="pe-company">Class Group Project</h4>
+            <h4 class="pe-company">Collaborative Project</h4>
             <p class="pe-time">Fall 2023</p>
           </div>
 
           <div class="pe-right">
             <div class="pe-description">
-                <p>This project focuses on visualizing data related to songs on Spotify, using two main datasets: <a target="_blank" class="text-link" href="https://www.kaggle.com/datasets/josephinelsy/spotify-top-hit-playlist-2010-2022">one</a> containing information about top hit songs between 2010 and 2022, and <a target="_blank" class="text-link" href="https://www.kaggle.com/datasets/estienneggx/spotify-unpopular-songs">another</a> containing characteristics of less popular songs as of 2022. Additionally, a third dataset providing genre information about artists is incorporated for extra visual representation. The visualizations include scatter plots for an overview of average feature values across different years and line graphs for a closer examination of specific audio features over time. Through these visualizations, this project aims to compare attributes between 'best' and 'worst' songs on Spotify, offering insights into trends and patterns in music consumption.</p>
+                <p>This project focuses on visualizing data related to songs on Spotify, using two main datasets: <a target="_blank" class="text-link" href="https://www.kaggle.com/datasets/josephinelsy/spotify-top-hit-playlist-2010-2022">one</a> containing information about top hit songs between 2010 and 2022, and <a target="_blank" class="text-link" href="https://www.kaggle.com/datasets/estienneggx/spotify-unpopular-songs">another</a> containing characteristics of less popular songs as of 2022. Additionally, a third dataset providing genre information about artists is incorporated for extra visual representation. The visualizations include scatter plots for an overview of average feature values across different years and line graphs for a closer examination of specific audio features over time. Through these visualizations, this project aims to compare attributes between 'best' and 'worst' songs on Spotify, offering insights into trends and patterns in music consumption. My personal contributions included writing the report on the visualization developed, helping design the visualization, coordinating all of the group meetups, and accumulating all of the necessary work for submission.</p>
                 <div class="lightning"><span class="material-symbols-outlined">bolt</span></div>
                 <p>Below is an embedding of the project visualizations! If you wish to view in a separate browser, click <a target="_blank" class="text-link" href="https://nurayyozden.github.io/Spotify-Music-Visualizations-Project/">here</a>. If you wish to view all of the project files, including the report, they can be found at this <a target="_blank" class="text-link" href="https://github.com/nurayyozden/Spotify-Music-Visualizations-Project">GitHub repository</a>.</p>
 
@@ -51,7 +52,7 @@
 <script src="scripts/vanta.net.min.js"></script>
 <script>
 VANTA.NET({
-el: "html",
+el: "#vanta-bg",
 mouseControls: true,
 touchControls: true,
 gyroControls: false,
