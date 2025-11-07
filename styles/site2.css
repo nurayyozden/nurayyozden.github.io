@@ -210,23 +210,13 @@ a {
 }
 
   .download-link:hover, .back-button:hover {
-    background-color: #001aad; /* Darker purple on hover */
+    background-color: #001aad; 
   }
 
 
 
 /* home page formatting */
 
-/* OLD
-.home-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    padding-top:160px;
-    position: relative;
-    margin-bottom: 200px;
-} */
 
 .home-content {
   display: flex;
@@ -238,9 +228,7 @@ a {
   padding-right: 8rem;
 }
 
-/* .home-text {
-    text-align: center;
-} */
+
 
 .home-img {
   width: 500px;
@@ -255,7 +243,7 @@ a {
   }
 
   .home-img {
-    width: 60%;
+    display: none;
   }
 }
 
@@ -671,9 +659,6 @@ footer h4 {
         font-size: 90px;
     }
 
-    .computer-svg {
-        display: block;
-    }
 
 }
 
