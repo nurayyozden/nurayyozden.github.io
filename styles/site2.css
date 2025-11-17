@@ -570,6 +570,18 @@ iframe {
 
 }
 
+.pe-images {
+    display: flex;
+    flex-direction: row;
+}
+
+.pe-images img {
+    border-radius: 10px;
+    height: 200px;
+    width: auto;
+    margin: 20px;
+}
+
 .pe-time {
     font-style: italic;
 }
