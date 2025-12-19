@@ -42,7 +42,6 @@ body > *:not(#vanta-bg):not(.sticky-header) {
 }
 
 /* Nav bar CSS */
-
  
 .sticky-header {
   position: fixed;
@@ -52,19 +51,15 @@ body > *:not(#vanta-bg):not(.sticky-header) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(175, 208, 255, 0.95); /* or solid #afd0ff if you prefer */
+  background-color: rgba(175, 208, 255, 0.95); 
   padding: 1rem 2rem;
   box-sizing: border-box;
   z-index: 10; /* above everything */
 }
 
-
-
 .body-pe {
     padding: 20px;
 }
-
-
 
 #navOverlay {
     display: none;
