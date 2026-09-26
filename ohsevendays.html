@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="styles/site2.css" />
+  <title>Nuray's Professional Website</title>
+  <!-- Lightning bolt icon -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+</head>
+
+
+<body class="body-pe">
+  <div id="vanta-bg"></div>
+
+    <!-- Header -->
+    <header>
+        <a href="index.html#projects-anchor" class="back-button">Back</a>
+    </header>
+
+    <div class="pe-wrapper">
+
+    <!-- OhSevenDays -->
+      <div class="pe-details">
+        <div class="pe-left">
+            <h2 class="pe-title">Data Visibility Project @ <a target="_blank" href="https://www.ohsevendays.com/">OhSevenDays</a></h2>
+            <h4 class="pe-company">Individual Project</h4>
+            <p class="pe-time">Summer 2026</p>
+        </div>
+
+        <div class="pe-right">
+              <p class="pe-description">I had the opportunity to intern with <a class="github-embed" target="_blank"  href="https://www.ohsevendays.com/">OhSevenDays</a>, an Istanbul-based fashion company that creates their clothes from deadstock fabric sourced from local textile mills. While their message to "use what already exists" was great, I found that they lacked transparency around just how much fabric they were actually saving from the landfill. This was reflected on the backend too — their data on fabric sourcing, amounts, composition, and more was scattered and fragmented. This wasn't something I was actually assigned to work on, but I saw the gap and decided to build a solution myself.</p>
+              <div class="lightning"><span class="material-symbols-outlined">bolt</span></div>
+
+              <p class="pe-description">My project was threefold. First, I built a data structure and workflow for employees to log fabric information, such as color, origin, composition, cost, and more. This gave them real visibility into how much fabric they'd actually sourced, what went into each garment and how much, and how much was left over after the collection.</p>
+                            <div class="pe-images">
+                                <img src="uploads/product_metafield.png" alt="Product Metafields">
+                            </div>
+              <div class="lightning"><span class="material-symbols-outlined">bolt</span></div>
+
+              <p class="pe-description">Second, I coded a dynamic section on their website that pulled from this data to show how much fabric each piece actually diverted from the landfill. This meant working within real platform constraints — for example, the tool I built on has no native way to sort entries by a computed value, so I encoded the computed data into sortable keys and decoded it at render time. I also designed the fabric display to filter dynamically by collection and season using the tags already on each product, rather than duplicating that information by hand for every new collection. This lets customers connect with the piece and understand the impact of their purchase; a product that reduces waste instead of contributing to it.</p>
+                            <div class="pe-images">
+                                <img src="uploads/product_fabric_data.png" alt="Product Fabric Data">
+                            </div>
+              <div class="lightning"><span class="material-symbols-outlined">bolt</span></div>
+
+              <p class="pe-description">Then, I helped build a new page called <a class="github-embed" target="_blank" href="https://ohsevendays.com/en-gb/pages/our-impact-1">Our Impact</a>. After introducing OhSevenDays' mission, it includes a fabric log section where shoppers can learn more about the fabric used in a specific collection, pulling data like the number of pieces made from that fabric, its origin, and more.</p>
+                              <div class="pe-images">
+                                  <img src="uploads/fabric_carousel.png" alt="Fabric Carousel">
+                              </div>    
+              <div class="lightning"><span class="material-symbols-outlined">bolt</span></div>
+
+              <p class="pe-description">Lastly, I wrote a full internal guide so OhSevenDays employees can update all of this themselves with each new collection. Since the guide needed to make sense to both developers and non-technical staff, I built it around a consistent color and formatting legend that distinguishes data objects, fields, UI actions, and code — so future employees can follow it without me there to explain it.</p>
+              <div class="lightning"><span class="material-symbols-outlined">bolt</span></div>
+
+              <p class="pe-description">Overall, this experience taught me what it actually takes to make progress on sustainability from a business standpoint, rather than just talking about it. Building this system showed me firsthand how much organized information matters on both sides — for consumers to actually trust and understand the impact of what they're buying, and for a producer to make real decisions instead of guessing. It also showed me how easily an initiative like this can get pushed to the back burner when more pressing concerns come up, which made me appreciate how much sustainability work depends on someone actually building the infrastructure for it, not just believing in it.</p>
+
+
+        </div>
+      </div>
+
+
+  </div>
+
+
+<script src="scripts/three.r134.min.js"></script>
+<script src="scripts/vanta.net.min.js"></script>
+<script>
+VANTA.NET({
+el: "#vanta-bg",
+mouseControls: true,
+touchControls: true,
+gyroControls: false,
+minHeight: 200.00,
+minWidth: 200.00,
+scale: 1.00,
+scaleMobile: 1.00,
+color: 0xffffff,
+backgroundColor: 0xafd0ff
+})
+</script>
+
+</body>
+
+
+
+</html>
